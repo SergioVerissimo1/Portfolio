@@ -4,7 +4,7 @@
   letter-spacing: 5px;
   font-weight: bold;
   color: white;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid var(--accent);
   text-transform: uppercase;
   margin-bottom: 5rem !important;
   -webkit-touch-callout: none;

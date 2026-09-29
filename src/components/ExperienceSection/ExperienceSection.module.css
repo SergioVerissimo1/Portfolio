@@ -8,8 +8,8 @@
 }
 .header {
   display: flex;
-  background-color: orange;
-  color: white !important;
+  background-color: var(--accent);
+  color: var(--accent-foreground) !important;
   justify-content: space-between;
   /* font-weight: bold !important; */
   /* font-size: 16pt; */
@@ -57,12 +57,12 @@
   cursor: pointer;
 }
 .website:hover {
-  color: orange;
+  color: var(--accent-on-light);
   cursor: pointer;
 }
 .icon {
   margin-right: 7px;
-  color: orange;
+  color: var(--accent-on-light);
 }
 .textDiv {
   text-align: left;

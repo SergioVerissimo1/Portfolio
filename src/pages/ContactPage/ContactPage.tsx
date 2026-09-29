@@ -78,9 +78,9 @@ const ContactPage = () => {
                   {...props}
                   style={{
                     position: "absolute",
-                    backgroundColor: "orange",
+                    backgroundColor: "var(--accent)",
                     padding: "5px 10px",
-                    color: "white",
+                    color: "var(--accent-foreground)",
                     borderRadius: 3,
                     ...props.style,
                   }}
@@ -92,7 +92,7 @@ const ContactPage = () => {
           </div>
           <ScrollToTop
             smooth
-            style={{ color: "orange", borderRadius: "100px" }}
+            style={{ color: "var(--accent-on-light)", borderRadius: "100px" }}
             component={<FontAwesomeIcon icon={faArrowUp} />}
           />
         </div>

@@ -1,8 +1,8 @@
 .tag {
-  background-color: orange !important;
+  background-color: var(--accent) !important;
   padding: 10px 15px;
   border-radius: 5px;
   margin: 2px;
   font-weight: normal !important;
-  color: #000000 !important;
+  color: var(--accent-foreground) !important;
 }

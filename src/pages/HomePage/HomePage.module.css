@@ -4,7 +4,7 @@
   font-family: MyWebFont;
   letter-spacing: 5px;
   color: white;
-  text-shadow: 2px 2px 0px orange;
+  text-shadow: 2px 2px 0px var(--accent);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -51,8 +51,9 @@
 }
 
 .button:hover {
-  background-color: white;
-  color: orange;
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+  border-color: var(--accent);
   transition: all 0.3s linear;
 }
 
@@ -67,7 +68,8 @@
 }
 
 .tooltip .tooltip-inner {
-  background-color: orange !important;
+  background-color: var(--accent) !important;
+  color: var(--accent-foreground) !important;
   font-family: MyWebFont;
 }
 

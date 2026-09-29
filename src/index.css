@@ -1,3 +1,9 @@
+:root {
+  --accent: #5ea8a6;
+  --accent-foreground: #111827;
+  --accent-on-light: #267a78;
+}
+
 @font-face {
   font-family: "MyWebFont";
   src: url("./fonts/JetBrainsMono-Bold.woff2") format("woff"),
