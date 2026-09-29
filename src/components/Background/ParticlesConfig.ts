@@ -216,7 +216,6 @@ export const ParticlesConfig: RecursivePartial<IOptions> = {
     },
     effect: {
       close: true,
-      fill: true,
       options: {},
       type: [],
     },
@@ -225,14 +224,6 @@ export const ParticlesConfig: RecursivePartial<IOptions> = {
       angle: {
         offset: 0,
         value: 90,
-      },
-      attract: {
-        distance: 200,
-        enable: false,
-        rotate: {
-          x: 3000,
-          y: 3000,
-        },
       },
       center: {
         x: 50,
@@ -274,11 +265,6 @@ export const ParticlesConfig: RecursivePartial<IOptions> = {
         enable: false,
       },
       straight: false,
-      trail: {
-        enable: false,
-        length: 10,
-        fill: {},
-      },
       vibrate: false,
       warp: false,
     },
@@ -295,13 +281,10 @@ export const ParticlesConfig: RecursivePartial<IOptions> = {
       value: 80,
     },
     opacity: {
-      value: {
-        min: 0.1,
-        max: 0.5,
-      },
+      value: 0,
       animation: {
         count: 0,
-        enable: true,
+        enable: false,
         speed: 1,
         decay: 0,
         delay: 0,
@@ -325,29 +308,10 @@ export const ParticlesConfig: RecursivePartial<IOptions> = {
     },
     shape: {
       close: true,
-      fill: true,
-      options: {
-        char: [
-          {
-            fill: true,
-            font: "Font Awesome 5 Brands",
-            style: "",
-            value: [""],
-            weight: "400",
-          },
-          {
-            fill: true,
-            font: "Font Awesome 5 Free",
-            style: "",
-            value: [""],
-            weight: "900",
-          },
-        ],
-      },
-      type: "char",
+      type: "circle",
     },
     size: {
-      value: 16,
+      value: 1,
       animation: {
         count: 0,
         enable: false,
@@ -361,7 +325,7 @@ export const ParticlesConfig: RecursivePartial<IOptions> = {
       },
     },
     stroke: {
-      width: 1,
+      width: 0,
       color: {
         value: "#ffffff",
         animation: {

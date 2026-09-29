@@ -1,9 +1,19 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { expect, test, vi } from 'vitest';
 import App from './App';
 
-test('renders learn react link', () => {
+vi.mock('./components/Background/Background', () => ({
+  default: () => null,
+}));
+
+test('navigation links point to the portfolio sections', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  for (const section of ['home', 'about', 'experience', 'projects', 'contact']) {
+    expect(screen.getByRole('link', { name: new RegExp(`^\\./${section}$`, 'i') })).toHaveAttribute(
+      'href',
+      `#${section}`,
+    );
+    expect(document.getElementById(section)).toBeInTheDocument();
+  }
 });
